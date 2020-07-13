@@ -64,6 +64,7 @@
             "rm -rf runtime/container"
         ],
         "test": "co-phpunit -c phpunit.xml --colors=always",
+        "coverage": "co-phpunit -c phpunit.xml --colors=always --coverage-html ./runtime/codeCoverage",
         "cs-fix": "php-cs-fixer fix $1",
         "analyse": "phpstan analyse --memory-limit 300M -l 0 -c phpstan.neon ./app ./config",
         "start": "php ./bin/hyperf.php start"

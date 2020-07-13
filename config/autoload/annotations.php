@@ -17,5 +17,9 @@ return [
         'ignore_annotations' => [
             'mixin',
         ],
+        'class_map' => [
+            \SebastianBergmann\Environment\Runtime::class => BASE_PATH . '/app/Kernel/ClassMap/Runtime.php',
+            \SebastianBergmann\CodeCoverage\Driver\Xdebug::class => BASE_PATH . '/app/Kernel/ClassMap/Xdebug.php',
+        ]
     ],
 ];
